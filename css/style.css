@@ -1,0 +1,358 @@
+/* Fonts Start */
+@font-face {
+    font-family: Poppins;
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: PoppinsMedium;
+    src: url('../fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: PoppinsBold;
+    src: url('../fonts/Poppins-Bold.ttf');
+}
+
+.poppins{
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+.poppinsmedium{
+    font-family: PoppinsMedium;
+    font-weight: 500;
+}
+
+.poppinsbold{
+    font-family: PoppinsBold;
+    font-weight: 700;
+}
+
+body{
+    font-family:Poppins;
+}
+/* Fonts End */
+
+
+
+/* *** Header Start *** */
+header{
+    background-color: #eae6f5;
+    padding-bottom: 90px;
+}
+
+.navbar-brand h1{
+    font-size: 22px;
+    color: #4b208c;
+}
+
+#navigation{
+    transition: .8s ease-in-out;
+}
+
+/* Navigation Start */
+.navbar-nav .nav-link{
+    font-family: PoppinsMedium;
+    font-size: 15px;
+    color: #0c0c0c;
+    text-align: center;
+    padding: 7px 20px;
+    border-radius: 35px;
+    transition: .8s ease-in-out;
+}
+
+.navbar-nav .nav-item a:is(.active, :hover){
+    background-color: #4b208c;
+    color: white;
+}
+
+
+/* Navbar Toggler Style */
+#navtoggler{
+    border: none;
+    width: 40px;
+    height: 25px;
+    padding: 2px 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#navtoggler:focus{
+    box-shadow: none;
+}
+
+#navtoggler span.toggler-icon{
+    width: 100%;
+    height: 3px;
+    background-color: #4b208c;
+    transition: all .8s ease-in-out;
+}
+
+.activate .toggler-icon:first-child{
+    transform: rotate(45deg) translate(1px, 10px);
+}
+
+.activate .toggler-icon:nth-child(2){
+    filter: opacity(0);
+    transition: .4s ease-in-out;
+}
+
+.activate .toggler-icon:last-child{
+    transform: rotate(-45deg) translate(1px, -12px);
+}
+
+/* Navbar Toggler Style End */
+
+
+/* Navigation End */
+
+/* Heading Texts Start */
+#headingtexts a{
+    background-color: #4b208c;
+    color: white;
+    border-radius: 35px;
+    font-family: PoppinsMedium;
+    transition: .8s ease-in-out;
+}
+
+#headingtexts a:hover{
+    background-color: #5625a1;
+}
+/* Heading Texts End */
+
+
+/* Carousel Start */
+#headercarousel .carousel-item img{
+    border-radius: 50%;
+    border: 7px solid #7b57b2;
+    position: relative;
+}
+
+#headercarousel .carousel-control-prev{
+    background-color: white;
+    background-image: url('../images/prev.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    opacity: 100%;
+    transition: .8s ease-in-out;
+    position: absolute;
+    top: 90%;
+    left: 70%;
+}
+
+#headercarousel .carousel-control-next {
+    background-color: #4b208c;
+    background-image: url('../images/next.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    opacity: 100%;
+    transition: .8s ease-in-out;
+    position: absolute;
+    top: 84%;
+    left: 79%;
+}
+
+#headercarousel .carousel-control-prev:hover, #headercarousel .carousel-control-next:hover{
+    box-shadow: 0px 0px 10px grey;
+}
+/* Carousel End */
+
+/* *** Header End *** */
+
+
+
+/* *** Our Services Container Start *** */
+#servicescontainer{
+    padding-top: 90px;
+    padding-bottom: 35px;
+}
+
+.headingcontainer{
+    padding-bottom: 35px;
+}
+/* Cards Start */
+#servicescontainer .card{
+    height: 100%;
+    padding: 35px 25px 25px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
+    border-radius: 15px;
+    position: relative;
+    box-sizing: border-box;
+    max-height: 347px;
+}
+
+#servicescontainer .imgbox{
+    height: 125px;
+}
+
+#servicescontainer .card-title{
+    color: #2e0e5f;
+}
+
+#servicescontainer .activecard::before{
+    content: '';
+    border-top: 15px solid #512a97;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: .8s ease-in-out;
+}
+
+#servicescontainer .card:hover::before{
+    content: '';
+    border-top: 15px solid #512a97;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+/* Cards End */
+
+#servicescontainer a{
+    background-color: #4b208c;
+    color: white;
+    border-radius: 35px;
+    font-family: PoppinsMedium;
+    transition: .8s ease-in-out;
+}
+
+#servicescontainer a:hover{
+    background-color: #5625a1;
+}
+
+/* *** Our Services Container End *** */
+
+
+/* *** About Us Container Start *** */
+#aboutuscontainer{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #f3f0f6;
+}
+
+#aboutuscontainer a{
+    background-color: #4b208c;
+    color: white;
+    transition: .8s ease-in-out;
+    font-family: PoppinsMedium;
+}
+
+#aboutuscontainer a:hover{
+    background-color: #5625a1;
+}
+
+/* Image Boxes Start */
+.imgbox-1{
+    width: 70%;
+    border-radius: 100%;
+    border: 5px solid #7b57b2;
+    overflow: hidden;
+}
+
+.imgbox-2{
+    width: 50%;
+    border-radius: 100%;
+    border: 5px solid #7b57b2;
+    overflow: hidden;
+}
+/* Image Boxes End */
+
+/* *** About Us Container End *** */
+
+
+
+/* *** Blog Container Start *** */
+#blogcontainer{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+#blogcontainer .card{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
+}
+/* *** Blog Container End *** */
+
+
+
+/* *** Contact Container Start *** */
+#contactcontainer{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+/* Forms Start */
+form > .form-control-lg{
+    border: none;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16);
+    color: black;
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+form > .form-control-lg:focus {
+    outline: none;
+}
+
+form > .btn{
+    background-color: #4b208c;
+    border-radius: 0;
+    color: white;
+    transition: .8s ease-in-out;
+}
+
+form > .btn:hover{
+    background-color: #5625a1;
+}
+/* Forms End */
+
+/* *** Contact Container End *** */
+
+
+/* *** Footer Start *** */
+footer{
+    background-color: #190734;
+    padding-top: 90px;
+}
+
+footer form .form-control-lg, footer form .btn{
+    border-radius: 0;
+    font-family: Poppins;
+}
+
+footer form .form-control-lg:focus{
+    outline: none;
+}
+
+footer form .btn{
+    background-color: #4b208c;
+    border-radius: 0;
+    border: none;
+    color: white;
+    transition: .8s ease-in-out;
+}
+
+footer form .btn:hover{
+    background-color: #5625a1;
+    outline: none;
+}
+
+#social img{
+    width: 35px;
+    height: 35px;
+}
+/* *** Footer End *** */
